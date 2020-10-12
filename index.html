@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="player">
+            <video
+                class="player__video"
+                src="./assets/Motivational short video - How to succeed - cartoon.mp4"
+            ></video>
+            <input type="range" class="player__current-time" disabled />
+            <div class="player__bottom-control-panel">
+                <button class="player__state-button player-control-button">
+                    <span class="player__state-button--inactive">
+                        <i class="fa fa-play"></i>
+                    </span>
+                    <span class="player__state-button--active">
+                        <i class="fa fa-pause"></i>
+                    </span>
+                </button>
+                <!-- end player state button -->
+                <div class="player__volume">
+                    <input type="range" class="volume__input" />
+                </div>
+                <button
+                    class="player__screen-mode-toggle-button player-control-button"
+                >
+                    <i class="fa fa-expand fullscreen-button__icon"></i>
+                    <i class="fa fa-compress exit-fullscreen-button__icon"></i>
+                </button>
+            </div>
+        </div>
+        <script src="./scripts/player.js"></script>
+    </body>
+</html>
