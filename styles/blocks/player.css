@@ -60,11 +60,15 @@
     width: 40px;
     display: inline-block;
     cursor: pointer;
-    color: #0075ff;
+    color: #0077ff;
     background-color: transparent;
     border: none;
     font-size: 1.5em;
     outline: 0;
+}
+
+.player-control-button:focus {
+    color:#0059ff;
 }
 
 .player .exit-fullscreen-button__icon {
