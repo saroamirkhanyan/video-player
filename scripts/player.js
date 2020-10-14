@@ -36,14 +36,6 @@ screen_mode_toggle_button.onclick = function () {
     player.classList.toggle('fullscreen')
 }
 
-// {
-//     x: true,
-// }
-
-// [3, 2, 1]
-
-
-
 function updateCurrentTime() {
     current_time_input.value = video.currentTime * 100 / video.duration
 }
